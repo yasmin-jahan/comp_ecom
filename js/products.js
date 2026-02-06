@@ -11,8 +11,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/watches/watches_p2-1.jpg",
-      "/img/watches/watches_p2-2.jpg",
+      "img/watches/watches_p2-1.jpg",
+      "img/watches/watches_p2-2.jpg",
     ],
     category: "Watches",
     brand: "Omega ",
@@ -38,8 +38,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/shirts/shirts_p1-1.jpg",
-      "/img/shirts/shirts_p1-2.jpg",
+      "img/shirts/shirts_p1-1.jpg",
+      "img/shirts/shirts_p1-2.jpg",
     ],
     category: "Shirts",
     brand: "Levi's",
@@ -63,7 +63,7 @@ const products = [
     price: 29.99,
     listPrice: 0,
 
-    images: ["/img/shoes/shoes_p3-1.jpg", "/img/shoes/shoes_p3-2.jpg"],
+    images: ["img/shoes/shoes_p3-1.jpg", "img/shoes/shoes_p3-2.jpg"],
     category: "Shoes",
     brand: "Adidas",
     tags: ["best-seller"],
@@ -88,8 +88,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/t-shirts/t-shirts_p2-1.jpg",
-      "/img/t-shirts/t-shirts_p2-2.jpg",
+      "img/t-shirts/t-shirts_p2-1.jpg",
+      "img/t-shirts/t-shirts_p2-2.jpg",
     ],
     category: "T-Shirts",
     brand: "Polo",
@@ -114,7 +114,7 @@ const products = [
     price: 29.99,
     listPrice: 0,
 
-    images: ["/img/jeans/jeans_p1-1.jpg", "/img/jeans/jeans_p1-2.jpg"],
+    images: ["img/jeans/jeans_p1-1.jpg", "img/jeans/jeans_p1-2.jpg"],
     category: "Jeans",
     brand: "Levi's",
     tags: ["best-seller"],
@@ -139,8 +139,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/shirts/shirts_p1-1.jpg",
-      "/img/shirts/shirts_p1-2.jpg",
+      "img/shirts/shirts_p1-1.jpg",
+      "img/shirts/shirts_p1-2.jpg",
     ],
     category: "Shirts",
     brand: "Tom Ford",
@@ -166,8 +166,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/shirts/shirts_p2-1.jpg",
-      "/img/shirts/shirts_p2-2.jpg",
+      "img/shirts/shirts_p2-1.jpg",
+      "img/shirts/shirts_p2-2.jpg",
     ],
     category: "Shirts",
     brand: "Tom Ford",
@@ -193,7 +193,7 @@ const products = [
     price: 29.99,
     listPrice: 0,
 
-    images: ["/img/shoes/shoes_p1-1.jpg", "/img/shoes/shoes_p1-2.jpg"],
+    images: ["img/shoes/shoes_p1-1.jpg", "img/shoes/shoes_p1-2.jpg"],
     category: "Shirts",
     brand: "Levi's",
     tags: ["new-arrival"],
@@ -216,8 +216,8 @@ const products = [
     price: 149.99,
     listPrice: 0,
     images: [
-      "/img/watches/watches_p1-1.jpg",
-      "/img/watches/watches_p1-2.jpg",
+      "img/watches/watches_p1-1.jpg",
+      "img/watches/watches_p1-2.jpg",
     ],
     category: "Jeans",
     brand: "Levi’s",
@@ -240,7 +240,7 @@ const products = [
     description: "This is the description of product.",
     price: 129.99,
     listPrice: 0,
-    images: ["/img/shoes/shoes_p3-1.jpg", "/img/shoes/shoes_p3-2.jpg"],
+    images: ["img/shoes/shoes_p3-1.jpg", "img/shoes/shoes_p3-2.jpg"],
     category: "Jeans",
     brand: "Levi’s",
     tags: ["new-arrival"],
@@ -261,7 +261,7 @@ const products = [
     description: "This is the description of product 1.",
     price: 149.99,
     listPrice: 0,
-    images: ["/img/shoes/shoes_p2-1.jpg", "/img/shoes/shoes_p2-2.jpg"],
+    images: ["img/shoes/shoes_p2-1.jpg", "img/shoes/shoes_p2-2.jpg"],
     category: "Jeans",
     brand: "Levi’s",
     tags: ["new-arrival"],
@@ -284,7 +284,7 @@ const products = [
       "Symbol Premium's easy stretch jeans feature 'Air-Lite' hollow fiber, providing a unique blend of style, comfort. A desirable choice for denim lovers seeking both fashion and functionality in their wardrobe",
     price: 149.99,
     listPrice: 0,
-    images: ["/img/jeans/jeans_p1-1.jpg", "/img/jeans/jeans_p1-2.jpg"],
+    images: ["img/jeans/jeans_p1-1.jpg", "img/jeans/jeans_p1-2.jpg"],
     category: "Jeans",
     brand: "Levi’s",
     tags: ["new-arrival"],
@@ -307,7 +307,7 @@ const products = [
       "This Ben Martin casual denim jeans pant for men Durable and timeless look.AVAILABLE SIZE & COLOUR: This Ben Martin Mens Cotton Denim Jeans comes Range of sizes & Colors to suit different types. 40 Dark Blue, Light Blue, Brown, Green, Grey, Black & White. This Ben Martin Denim Jeans pant for Men is light weight breathable soft denim fabric. 1) Comfortable for all-day wear. 2) Casual and laid-back style. 3) 5 Basic Coin pockets for added functionality. 4) vailable in different washes and finishes.",
     price: 149.99,
     listPrice: 0,
-    images: ["/img/jeans/jeans_p2-1.jpg", "/img/jeans/jeans_p2-2.jpg"],
+    images: ["img/jeans/jeans_p2-1.jpg", "img/jeans/jeans_p2-2.jpg"],
     category: "Jeans",
     brand: "Levi’s",
     tags: ["new-arrival"],
@@ -332,7 +332,7 @@ const products = [
     price: 59.99,
     listPrice: 0,
 
-    images: ["/img/jeans/jeans_p3-1.jpg", "/img/jeans/jeans_p3-2.jpg"],
+    images: ["img/jeans/jeans_p3-1.jpg", "img/jeans/jeans_p3-2.jpg"],
     category: "Jeans",
     brand: "Gucci",
     tags: ["today-deal"],
@@ -355,7 +355,7 @@ const products = [
     price: 29.99,
     listPrice: 0,
 
-    images: ["/img/shoes/shoes_p2-1.jpg", "/img/shoes/shoes_p2-2.jpg"],
+    images: ["img/shoes/shoes_p2-1.jpg", "img/shoes/shoes_p2-2.jpg"],
     category: "Shoes",
     brand: "Puma",
     tags: ["today-deal"],
@@ -379,7 +379,7 @@ const products = [
     price: 229.99,
     listPrice: 0,
 
-    images: ["/img/jeans/jeans_p2-1.jpg", "/img/jeans/jeans_p2-2.jpg"],
+    images: ["img/jeans/jeans_p2-1.jpg", "img/jeans/jeans_p2-2.jpg"],
     category: "Jeans",
     brand: "Gucci",
     tags: ["today-deal"],
@@ -403,8 +403,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/t-shirts/t-shirts_p1-1.jpg",
-      "/img/t-shirts/t-shirts_p1-2.jpg",
+      "img/t-shirts/t-shirts_p1-1.jpg",
+      "img/t-shirts/t-shirts_p1-2.jpg",
     ],
     category: "T-Shirts",
     brand: "Polo",
@@ -430,8 +430,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/t-shirts/t-shirts_p2-1.jpg",
-      "/img/t-shirts/t-shirts_p3-2.jpg",
+      "img/t-shirts/t-shirts_p2-1.jpg",
+      "img/t-shirts/t-shirts_p3-2.jpg",
     ],
     category: "T-Shirts",
     brand: "Polo",
@@ -456,8 +456,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/t-shirts/t-shirts_p3-1.jpg",
-      "/img/t-shirts/t-shirts_p3-2.jpg",
+      "img/t-shirts/t-shirts_p3-1.jpg",
+      "img/t-shirts/t-shirts_p3-2.jpg",
     ],
     category: "T-Shirts",
     brand: "Burberry",
@@ -485,8 +485,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/shirts/shirts_p1-1.jpg",
-      "/img/shirts/shirts_p1-2.jpg",
+      "img/shirts/shirts_p1-1.jpg",
+      "img/shirts/shirts_p1-2.jpg",
     ],
     category: "Shirts",
     brand: "Levi's",
@@ -512,8 +512,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/watches/watches_p2-1.jpg",
-      "/img/watches/watches_p2-2.jpg",
+      "img/watches/watches_p2-1.jpg",
+      "img/watches/watches_p2-2.jpg",
     ],
     category: "Watches",
     brand: "Breitling ",
@@ -538,7 +538,7 @@ const products = [
     price: 329.99,
     listPrice: 0,
 
-    images: ["/img/shoes/shoes_p4-1.jpg", "/img/shoes/shoes_p4-2.jpg"],
+    images: ["img/shoes/shoes_p4-1.jpg", "img/shoes/shoes_p4-2.jpg"],
     category: "Shoes",
     brand: "Nike",
     tags: ["featured"],
@@ -563,8 +563,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/shirts/shirts_p2-1.jpg",
-      "/img/shirts/shirts_p2-2.jpg",
+      "img/shirts/shirts_p2-1.jpg",
+      "img/shirts/shirts_p2-2.jpg",
     ],
     category: "Shirts",
     brand: "Burberry",
@@ -590,8 +590,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/t-shirts/t-shirts_p4-1.jpg",
-      "/img/t-shirts/t-shirts_p4-2.jpg",
+      "img/t-shirts/t-shirts_p4-1.jpg",
+      "img/t-shirts/t-shirts_p4-2.jpg",
     ],
     category: "T-Shirts",
     brand: "Burberry",
@@ -616,8 +616,8 @@ const products = [
     listPrice: 0,
 
     images: [
-      "/img/t-shirts/t-shirts_p3-1.jpg",
-      "/img/t-shirts/t-shirts_p3-2.jpg",
+      "img/t-shirts/t-shirts_p3-1.jpg",
+      "img/t-shirts/t-shirts_p3-2.jpg",
     ],
     category: "T-Shirts",
     brand: "Burberry",
@@ -638,6 +638,8 @@ const products = [
 
 
 //product-section
+// const repoName = window.location.pathname.split("/")[1];
+// const BASE_PATH = repoName ? `/${repoName}/` : "/";
 const row = document.querySelector('.product_row');
 //render products
 function renderProducts(filterCategory = "all"){
