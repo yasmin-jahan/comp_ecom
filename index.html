@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- header-section-starts -->
+     <section class="header_section">
+        <div class="container">
+            <div class="header_wrapper">
+                <div class="header_area">
+                    <div class="main_header_wrapper">
+                        <a href="index.html" class="logo"><img src="img/amazon_logo_2.png" alt=""></a>
+                        <div class="header_nav">
+                            <div class="mobile_nav_header justify-content-between align-items-center">
+                                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+                                <div class="close_btn"><i class="fa-solid fa-xmark"></i></div>
+                            </div>
+                            <nav class="main_header_nav" id="navLinks">
+                                <ul class="main_ul">
+                                    <li class="active"><a href="index.html" >Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                       <div class="auth-icon d-flex  gap-sm-4 gap-2 align-items-center">
+                         <div class="form_btn d-flex gap-1 gap-sm-2 gap-xxl-3">
+                            <button class="common_button button login_btn m-0" id="login-btn"><a href="login.html">Login</a> <span></span></button>
+                            <button class="common_button button register_btn m-0" id="register-btn"><a href="register.html">Register</a> <span></span></button>
+                        </div>
+                         <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                        <div class="cart_icon position-relative">
+                            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i>
+                            <span class="cart_count" id="cartCount">0</span></a>
+                        </div>
+                       </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="black_overlay"></div>
+     </section>
+    <!-- header-section-ends -->
+
+    <!-- hero_section-starts -->
+     <section class="hero_section">
+         <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+          <div class="swiper-slide">
+         <div class="hero_wrapper">
+                <div class="container">
+                    <div class="hero_content">
+                        <h1>Welcome to shopping center</h1>
+                        <p>Discover amaizing deals today.</p>
+                        <a href="#" class="common_button">Shop Now <span></span></a>
+                    </div>
+                </div>
+                <img src="img/hero-1.jpg" alt="">
+            </div>
+      </div>
+      <div class="swiper-slide">
+         <div class="hero_wrapper">
+                <div class="container">
+                    <div class="hero_content">
+                        <h1>Special Discounts</h1>
+                        <p>Upto <span>50%</span> off selected items.</p>
+                        <a href="#" class="common_button">Explore More <span></span></a>
+                    </div>
+                </div>
+                <img src="img/hero-2.jpg" alt="">
+            </div>
+      </div>
+        
+          <div class="swiper-slide">
+         <div class="hero_wrapper">
+                <div class="container">
+                    <div class="hero_content">
+                        <h1>Explore More Arrivals</h1>
+                        <p>Fresh styles just for you.</p>
+                        <a href="" class="common_button">Browse <span></span></a>
+                    </div>
+                </div>
+                <img src="img/hero-3.jpg" alt="">
+            </div>
+      </div>
+        <div class="swiper-slide">
+         <div class="hero_wrapper">
+                <div class="container">
+                    <div class="hero_content">
+                        <h1>Welcome to shopping center</h1>
+                        <p>Discover amaizing deals today.</p>
+                        <a href="#" class="common_button">Shop Now <span></span></a>
+                    </div>
+                </div>
+                <img src="img/hero-4.jpg" alt="">
+            </div>
+      </div>
+      
+       
+    </div>
+    <div class="swiper-button-next swiper_next_btn"></div>
+    <div class="swiper-button-prev swiper_prev_btn"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+           
+       
+     </section>
+    <!-- hero_section-ends -->
+
+
+    <!-- product-section-starts -->
+     <section class="product_section">
+        <div class="container">
+            <div class="product_wrapper">
+                <div class="product_area">
+                    <div class="filter_buttons d-flex flex-nowrap overflow-x-auto pt-2 pb-3 pb-sm-4  pt-sm-3  pb-lg-4  pt-lg-4 overflow-x-auto gap-2 gap-md-3" id="filterContainer">
+                        
+                    </div>
+                    <div class="product_content_area" id="productGrid">
+                       <div class="row product_row row-gap-2 row-gap-md-4"></div>
+                            
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- product-section-ends -->
+     
+    <!-- banner-section-starts -->
+     <section class="banner_section position-relative overflow-hidden" >
+        <video autoplay muted loop playsinline class="banner_video">
+            <source src="https://cdn.pixabay.com/video/2020/04/07/35264-407130725_tiny.mp4" type="video/mp4" >
+        </video>
+        <div class="container">
+            <div class="banner_wrapper">
+                <div class="banner_area">
+                    <div class="banner_content">
+                        <div class="row align-items-center flex-wrap-reverse ">
+                            <div class="col-md-6">
+                                <div class="banner_text text-center">
+                                    <h2>Elevate Your Style</h2>
+                                    <p>Discover the latest trends in fashion with our curated collections.</p>
+                                    <a href="shop.html" class="common_button banner_btn d-inline-block">Shop Now <span></span></a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="banner_image">
+                                    <img src="img/banner-img.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- banner-section-ends -->
+
+    <!-- footer-section-starts -->
+      <footer class="footer_section">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_area">
+                    <div class="row pb-4">
+                        <div class="col-sm-8 col-md-6">
+                            <div class="footer_description">
+                                <a href="index.html" class="logo"><img src="img/amazon_logo_2.png" alt=""></a>
+                                <p>Your brand's story , values, and mission go here. You can add more about your services too.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4  col-lg-3">
+                            <div class="footer_link_content">
+                                <div class="footer_heading">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <div class="footer_links">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="faq.html">FAQs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="footer_link_content">
+                                <div class="footer_heading">
+                                    <h3>Follow Us</h3>
+                                </div>
+                                <div class="social_links d-flex gap-2">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p><b>&copy;</b> 2026 Your Brand. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- footer-section-ends -->
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="js/products.js"></script>
+    <script src="js/script.js"></script>
+
+    
+
+</body>
+</html>
