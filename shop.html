@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- header-section-starts -->
+         <section class="header_section">
+        <div class="container">
+            <div class="header_wrapper">
+                <div class="header_area">
+                    <div class="main_header_wrapper">
+                        <a href="index.html" class="logo"><img src="img/amazon_logo_2.png" alt=""></a>
+                        <div class="header_nav">
+                            <div class="mobile_nav_header justify-content-between align-items-center">
+                                <a href="index.html" class="logo"><img src="img/logo.svg" alt=""></a>
+                                <div class="close_btn"><i class="fa-solid fa-xmark"></i></div>
+                            </div>
+                            <nav class="main_header_nav" id="navLinks">
+                                <ul class="main_ul">
+                                    <li class="active"><a href="index.html" >Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                       <div class="auth-icon d-flex  gap-sm-4 gap-2 align-items-center">
+                         <div class="form_btn d-flex gap-1 gap-sm-2 gap-xxl-3">
+                            <button class="common_button button login_btn m-0" id="login-btn"><a href="login.html">Login</a> <span></span></button>
+                            <button class="common_button button register_btn m-0" id="register-btn"><a href="register.html">Register</a> <span></span></button>
+                        </div>
+                         <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                        <div class="cart_icon position-relative">
+                            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i>
+                            <span class="cart_count" id="cartCount">0</span></a>
+                        </div>
+                       </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="black_overlay"></div>
+     </section>
+    <!-- header-section-ends -->
+
+
+     <!-- shop-section-starts -->
+      <section class="shop_section">
+        <div class="container">
+         <div class="shop_container_area">
+            <div class="shop_wrapper">
+               
+                    <div class="mobile_wrapper">
+                        <div class="mobile_filter_btn">
+                            <i class="fa-solid fa-filter"></i>
+                        </div>
+                        <div class="select_option">
+                            <label for="sortSelect"></label>
+                            <select name="" id="sortSelect">
+                                <option value="default">default</option>
+                                <option value="price-asc">Price (Low-to-Heigh) </option>
+                                <option value="price-desc">Price (Heigh-to-Low)</option>
+                                <option value="name-asc">Name A-Z</option>
+                                <option value="name-desc">Name Z-A</option>
+                            </select>
+                        </div>
+                    </div>
+                     <div class="shop_area">
+                    <!-- left-side-area-starts -->
+                    <aside class="filters" id="filters">
+                        <div class="mobile_filter_close_btn"><i class="fa-solid fa-xmark"></i></div>
+                        
+                        <div class="filter_area">
+                            <label class="search" for="searchInput"><strong>Search :</strong></label> <br>
+                            <input type="text" id="searchInput" placeholder="Serach Products...">
+                        </div>
+                        <div class="filter_area">
+                           <strong class="headings">Category :</strong>
+                           <div class="filter_radio filter_gen_btn" id="filterCategory"></div>
+                        </div>
+                         <div class="filter_area">
+                           <strong class="headings">Brands :</strong>
+                           <div class="filter_brand filter_gen_btn" id="filterBrand"></div>
+                        </div>
+                         <div class="filter_area">
+                           <strong class="headings">Colors :</strong>
+                           <div class="filter_color filter_gen_btn" id="filterColor"></div>
+                        </div>
+                         <div class="filter_area">
+                            <label for="filterPrice">
+                           <strong class="headings max_price">Price (max) : $<span id="priceValue"></span></strong>
+                           </label><br>
+                           <input type="range" id="filterPrice" min="0" max="1000" step="1">
+                        </div>
+                        <div>
+                            <button id="resetFilterBtn" class="common_button">Reset Filters <span></span></button>
+                        </div>
+                    </aside>
+                    <!-- left-side-area-ends -->
+
+                    <!-- right-side-area-starts -->
+                     <div class="shop_product_wrapper product_wrapper">
+                        <div class="product_area" id="ProductGrid">
+                            <div class="row shop_product_row product_row row-gap-2 row-gap-md-4"></div>
+                        </div>
+                        <div class="pagination pagination_div" id="pagination"></div>
+                     </div>
+                     
+                    <!-- right-side-area-ends -->
+                </div>
+            </div>
+         </div>
+         </div>
+      </section>
+     <!-- shop-section-ends -->
+
+
+
+
+      <!-- footer-section-starts -->
+     <footer class="footer_section">
+        <div class="container">
+            <div class="footer_wrapper">
+                <div class="footer_area">
+                    <div class="row pb-4">
+                        <div class="col-sm-8 col-md-6">
+                            <div class="footer_description">
+                                <a href="index.html" class="logo"><img src="img/amazon_logo_2.png" alt=""></a>
+                                <p>Your brand's story , values, and mission go here. You can add more about your services too.</p>
+                            </div>
+                        </div>
+                        <div class="col-sm-4  col-lg-3">
+                            <div class="footer_link_content">
+                                <div class="footer_heading">
+                                    <h3>Quick Links</h3>
+                                </div>
+                                <div class="footer_links">
+                                    <ul>
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="shop.html">Shop</a></li>
+                                        <li><a href="contact.html">Contact Us</a></li>
+                                        <li><a href="faq.html">FAQs</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-lg-3">
+                            <div class="footer_link_content">
+                                <div class="footer_heading">
+                                    <h3>Follow Us</h3>
+                                </div>
+                                <div class="social_links d-flex gap-2">
+                                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p><b>&copy;</b> 2026 Your Brand. All rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- footer-section-ends -->
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="js/products.js"></script>
+<script src="js/shop.js"></script>
+    <script src="js/script.js"></script>
+
+    
+
+</body>
+</html>
