@@ -128,33 +128,33 @@ const products = [
     sizes: ["S", "M", "L", "XL"],
     reviews: [],
   },
-  {
-    id: 6,
-    name: "Lymio Men's Loose shirts || Men's shirts Pants || Denim shirts || Baggy",
-    slug: "lymio-mens-loose-shirts-mens-shirts-pants-denim-shirts-baggyss",
+  // {
+  //   id: 6,
+  //   name: "Lymio Men's Loose shirts || Men's shirts Pants || Denim shirts || Baggy",
+  //   slug: "lymio-mens-loose-shirts-mens-shirts-pants-denim-shirts-baggyss",
 
-    description:
-      "Elevate your street cred by pairing these Baggy Oversized shirts with a graphic t-shirt and high-top sneakers. Roll up the cuffs for an added edge and throw on a bomber jacket to complete the look",
-    price: 29.99,
-    listPrice: 0,
+  //   description:
+  //     "Elevate your street cred by pairing these Baggy Oversized shirts with a graphic t-shirt and high-top sneakers. Roll up the cuffs for an added edge and throw on a bomber jacket to complete the look",
+  //   price: 29.99,
+  //   listPrice: 0,
 
-    images: [
-      "img/shirts/shirts_p1-1.jpg",
-      "img/shirts/shirts_p1-2.jpg",
-    ],
-    category: "Shirts",
-    brand: "Tom Ford",
-    tags: ["best-seller"],
-    isPublished: true,
-    avgRating: 4.5,
-    numReviews: 6,
+  //   images: [
+  //     "img/shirts/shirts_p1-1.jpg",
+  //     "img/shirts/shirts_p1-2.jpg",
+  //   ],
+  //   category: "Shirts",
+  //   brand: "Tom Ford",
+  //   tags: ["best-seller"],
+  //   isPublished: true,
+  //   avgRating: 4.5,
+  //   numReviews: 6,
 
-    numSales: 9,
-    countInStock: 60,
-    colors: ["blue", "dark-blue"],
-    sizes: ["S", "M", "L", "XL"],
-    reviews: [],
-  },
+  //   numSales: 9,
+  //   countInStock: 60,
+  //   colors: ["blue", "dark-blue"],
+  //   sizes: ["S", "M", "L", "XL"],
+  //   reviews: [],
+  // },
   {
     id: 7,
     name: "Lymio Men's Loose shirts || Men's t-shirts Pants || Baggy",
@@ -194,7 +194,7 @@ const products = [
     listPrice: 0,
 
     images: ["img/shoes/shoes_p1-1.jpg", "img/shoes/shoes_p1-2.jpg"],
-    category: "Shirts",
+    category: "Shoes",
     brand: "Levi's",
     tags: ["new-arrival"],
     isPublished: true,
@@ -219,7 +219,7 @@ const products = [
       "img/watches/watches_p1-1.jpg",
       "img/watches/watches_p1-2.jpg",
     ],
-    category: "Jeans",
+    category: "Watches",
     brand: "Levi’s",
     tags: ["new-arrival"],
     isPublished: true,
@@ -241,7 +241,7 @@ const products = [
     price: 129.99,
     listPrice: 0,
     images: ["img/shoes/shoes_p3-1.jpg", "img/shoes/shoes_p3-2.jpg"],
-    category: "Jeans",
+    category: "Shoes",
     brand: "Levi’s",
     tags: ["new-arrival"],
     isPublished: true,
@@ -262,7 +262,7 @@ const products = [
     price: 149.99,
     listPrice: 0,
     images: ["img/shoes/shoes_p2-1.jpg", "img/shoes/shoes_p2-2.jpg"],
-    category: "Jeans",
+    category: "Shoes",
     brand: "Levi’s",
     tags: ["new-arrival"],
     isPublished: true,
@@ -644,9 +644,14 @@ const row = document.querySelector('.product_row');
 //render products
 function renderProducts(filterCategory = "all"){
   row.innerHTML ="";
-  const filterd = filterCategory == "all" ? products.slice(0, 10) : products.slice(0, 10).filter((p)=>p.category === filterCategory);
-
-  filterd.forEach((product) =>{
+  const filtered =
+  filterCategory === "all"
+    ? products.slice(0, 10)
+    : products.filter(
+        (p) =>
+          p.category.toLowerCase() === filterCategory.toLowerCase()
+      );
+  filtered.forEach((product) =>{
     const card =document.createElement('div');
     card.classList.add('col-sm-6', 'col-xl-4');
     card.setAttribute('data-category', product.category);
