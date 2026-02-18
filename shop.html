@@ -14,8 +14,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
 </head>
 <body>
-    <!-- header-section-starts -->
-         <section class="header_section">
+     <!-- header-section-starts -->
+      <section class="header_section">
         <div class="container">
             <div class="header_wrapper">
                 <div class="header_area">
@@ -34,11 +34,26 @@
                                 </ul>
                             </nav>
                         </div>
-                       <div class="auth-icon d-flex  gap-sm-4 gap-2 align-items-center">
-                         <div class="form_btn d-flex gap-1 gap-sm-2 gap-xxl-3">
-                            <button class="common_button button login_btn m-0" id="login-btn"><a href="login.html">Login</a> <span></span></button>
-                            <button class="common_button button register_btn m-0" id="register-btn"><a href="register.html">Register</a> <span></span></button>
+                       <div class="auth-icon d-flex  gap-sm-3 gap-2 align-items-center">
+                        <div class="user_menu_container" id="userMenu">
+                            <button id="userMenuButton" class="user_avatar">
+                              
+                                 <i class="fa-regular fa-user"></i>
+                            </button>
+                            <div id="userDropdown" class ="user_dropdown hidden">
+                                <button class="authBtn " id="userGreeting"></button>
+                                <ul class="dropdown_menu">
+                                    <li><a href="myorder.html">Orders</a></li>
+                                    <!-- <li class=""><a href="#">Profile</a><span></span></li>
+                                    <li class=""><a href="#">Settings</a><span></span></li> -->
+                                </ul>
+                                <button class=" logout_btn" id="logout_btn" onclick="logout()">Logout</button>
+                            </div>
                         </div>
+                         <!-- <div class="form_btn d-flex gap-1 gap-sm-2 gap-xxl-3"> -->
+                            <a href="login.html" class="common_button button login_btn m-0"  id="login-btn">Login <span></span></a> 
+                            <a href="register.html" class="common_button button register_btn m-0" id="register-btn">Register <span></span></a> 
+                        <!-- </div> -->
                          <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
                         <div class="cart_icon position-relative">
                             <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i>
@@ -185,8 +200,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
     <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="js/addToCart.js"></script>
 <script src="js/products.js"></script>
+ <script src="js/product_details.js"></script>
 <script src="js/shop.js"></script>
+
     <script src="js/script.js"></script>
 
     
