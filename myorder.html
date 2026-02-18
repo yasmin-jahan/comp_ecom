@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Order Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+ 
+</head>
+<body>
+
+      <!-- header-section-starts -->
+    <section class="header_section">
+        <div class="container">
+            <div class="header_wrapper">
+                <div class="header_area">
+                    <div class="main_header_wrapper">
+                        <a href="index.html" class="logo"><img src="img/amazon_logo_2.png" alt=""></a>
+                        <div class="header_nav">
+                            <div class="mobile_nav_header justify-content-between align-items-center">
+                                <a href="index.html" class="logo"><img src="img/amazon_logo_2.png" alt=""></a>
+                                <div class="close_btn"><i class="fa-solid fa-xmark"></i></div>
+                            </div>
+                            <nav class="main_header_nav" id="navLinks">
+                                <ul class="main_ul">
+                                    <li class="active"><a href="index.html" >Home</a></li>
+                                    <li><a href="shop.html">Shop</a></li>
+                                    <li><a href="contact.html">Contact Us</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                       <div class="auth-icon d-flex  gap-sm-3 gap-2 align-items-center">
+                        <div class="user_menu_container" id="userMenu">
+                            <button id="userMenuButton" class="user_avatar">
+                              
+                                 <i class="fa-regular fa-user"></i>
+                            </button>
+                            <div id="userDropdown" class ="user_dropdown hidden">
+                                <button class="authBtn " id="userGreeting"></button>
+                                <ul class="dropdown_menu">
+                                    <li><a href="myorder.html">Orders</a></li>
+                                    <!-- <li class=""><a href="#">Profile</a><span></span></li>
+                                    <li class=""><a href="#">Settings</a><span></span></li> -->
+                                </ul>
+                                <button class=" logout_btn" id="logout_btn" onclick="logout()">Logout</button>
+                            </div>
+                        </div>
+                         <!-- <div class="form_btn d-flex gap-1 gap-sm-2 gap-xxl-3"> -->
+                            <a href="login.html" class="common_button button login_btn m-0"  id="login-btn">Login <span></span></a> 
+                            <a href="register.html" class="common_button button register_btn m-0" id="register-btn">Register <span></span></a> 
+                        <!-- </div> -->
+                         <div class="hamburger"><i class="fa-solid fa-bars"></i></div>
+                        <div class="cart_icon position-relative">
+                            <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i>
+                            <span class="cart_count" id="cartCount">0</span></a>
+                        </div>
+                       </div>
+                      
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="black_overlay"></div>
+     </section>
+    <!-- header-section-ends -->
+
+ <!-- myorder-section-starts -->
+  <section class="myorder_section">
+    <div class="container">
+        <div class="myorder_wrapper">
+            <h2>My Orders</h2>
+            <div class="myorder_area" id="ordersContainer">
+            
+               
+            </div>
+        </div>
+    </div>
+  </section>
+ <!-- myorder-section-ends -->
+
+   
+
+    
+</body>
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+  
+    <script src="js/myorder.js"></script>
+  <script src="js/addToCart.js"></script>
+
+ <script src="js/products.js"></script>
+ <script src="js/product_details.js"></script>
+  <script src="js/cart.js"></script>
+
+
+    <script src="js/script.js"></script>
