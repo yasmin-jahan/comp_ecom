@@ -92,6 +92,16 @@
         justify-content: space-between;
      }
     /***************************** SHOP PAGE ENDS *************************************/
+
+
+    /***************************** CHECKOUT PAGE STARTS  *************************************/
+    .summary_line .checkout_price {
+    font-size: 20px;
+}
+.checkout_wrapper .row{
+    row-gap: 20px;
+}
+    /***************************** CHECKOUT PAGE ENDS *************************************/
 }
 
 @media only screen and (max-width:991px){
@@ -196,6 +206,9 @@
         max-width: 300px;
         height: 230px;
     }
+    .product_card:hover {
+    transform: unset;
+  }
     /* banner-section-ends */
 
     /*************************************** SHOP PAGE STARTS *************************************************/
@@ -220,6 +233,27 @@
     font-size: 13px;
 }
     /*************************************** SHOP PAGE ENDS *************************************************/
+
+
+    /*************************************** MYORDER PAGE STARTS *************************************************/
+       .myorder_area table thead{
+        display: none;
+    }
+    .myorder_area table  tbody td::before{
+        content: attr(data-title);
+        float: left;
+    }
+  .myorder_area table  tr, .myorder_area table  td{
+        display: block;
+        text-align: right;
+    }
+    .myorder_area table .table_btns {
+        justify-content: space-between;
+    }
+    .viewBtn{
+      margin-left: auto;
+    }
+    /*************************************** MYORDER PAGE ENDS *************************************************/
 }
 
 @media only screen and (max-width:767px){
@@ -240,9 +274,7 @@
 .cart_icon a i {
     font-size: 26px;
 }
-.cart_icon .cart_count {
-   font-size: 10px;
-}
+
 .mobile_nav_header {
     padding: 10px 15px;
 }
@@ -258,6 +290,9 @@
 }
 .main_header_nav {
     padding: 10px 30px;
+}
+.user_avatar i {
+    font-size: 25px;
 }
     /* header-section-ends */
 
@@ -334,6 +369,60 @@ padding: 20px;
 }
  
     /********************************* SHOP PAGE ENDS **********************************************/
+
+
+    /********************************* CHECKOUT PAGE STARTS **********************************************/
+    .checkout_heading h2, .form_section h2 {
+   padding: 15px 0;
+}
+.checkout_area h2 {
+    padding: 15px 0;
+}
+.billing_form_input input, .billing_form_input select {
+    margin-bottom: 12px;
+}
+.form_section .billing_form_input label {
+font-size: 16px;
+}
+.summary_item span {
+    font-size: 15px;
+}
+.form_section .billing_form_input input {
+    font-size: 16px;
+}
+.form_section .billing_form_input input[type="text"]::placeholder {
+    font-size: 14px;
+}
+    /********************************* CHECKOUT PAGE ENDS **********************************************/
+
+
+    /********************************* CART PAGE STARTS **********************************************/
+    .cart_details {
+    margin-left: 0;
+}
+
+.cart_img {
+    width: 130px;
+    height: 130px;
+}
+.cart_details p {
+    font-size: 16px;
+    margin: 7px 0;
+}
+.cart {
+    gap: 30px;
+}
+    /********************************* CART PAGE ENDS **********************************************/
+
+
+    /********************************* LOGIN PAGE STARTS **********************************************/
+    .register_area {
+    width: 400px;
+}
+.login_form h2 {
+    margin-bottom: 20px;
+}
+    /********************************* LOGIN PAGE ENDS **********************************************/
     
 }
 
@@ -353,11 +442,13 @@ padding: 20px;
 .cart_icon a i {
     font-size: 22px;
 }
-.cart_icon .cart_count {
-    top: -5px;
-    right: -7px;
-    padding: 1px 5px;
-}
+        .cart_icon .cart_count {
+        top: -5px;
+        right: -7px;
+        font-size: 12px;
+        height: 18px;
+        width: 18px;
+    }
 .main_header_nav ul li a {
     font-size: 18px;
 }
@@ -367,6 +458,9 @@ padding: 20px;
 .close_btn {
     font-size: 25px;
 }
+    .user_avatar i {
+        font-size: 22px;
+    }
     /* header-section-ends */
 
     /* hero-section-starts */
@@ -475,6 +569,59 @@ padding: 20px;
         padding-bottom: 10px;
     }
     /*************************************** SHOP PAGE ENDS ******************************************/
+
+
+
+    /*************************************** MYORDER PAGE ENDS ******************************************/
+    .myorder_wrapper {
+    padding: 18px;
+}
+.myorder_area table tbody td::before {
+        font-size: 14px;
+    }
+    .myorder_area table td {
+    font-size: 14px;
+}
+.myorder_area table .table_btns {
+ gap: 10px;
+}
+    /*************************************** MYORDER PAGE ENDS ******************************************/
+
+
+    /*************************************** CART PAGE STARTS ******************************************/
+    .cart_img{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .cart_details {
+    margin-left: 0;
+    text-align: center;
+}
+.cart_details p {
+    font-size: 16px;
+}
+.total_amount {
+    font-size: 18px;
+    text-align: center;
+}
+.checkout-card{
+    text-align: center;
+}
+.cart_content_container h2 {
+    margin: 25px 0;
+}
+.summary_line .checkout_price {
+    font-size: 18px;
+}
+.summary_line {
+    margin: 15px 0;
+}
+.cart {
+    gap: 50px;
+}
+    /*************************************** CART PAGE ENDS ******************************************/
+
+
    
 }
 
@@ -518,6 +665,9 @@ padding: 20px;
 .main_header_nav {
     padding: 10px 20px;
 }
+    .user_avatar i {
+        font-size: 20px;
+    }
     /* header-section-ends */
 
     /* hero-section-starts */
@@ -610,6 +760,83 @@ padding: 20px;
         font-size: 14px;
     }
     /************************************ SHOP PAGE ENDS ************************************************/
+
+
+    /************************************ CHECKOUT PAGE STARTS ************************************************/
+        .form_section .billing_form_input input {
+        font-size: 15px;
+    }
+        .form_section .billing_form_input label {
+        font-size: 15px;
+    }
+        .summary_item span {
+        font-size: 14px;
+    }
+    .summary_line .checkout_price {
+        font-size: 15px;
+    }
+    .checkout_content {
+padding: 12px;
+}
+    .billing_form_input input, .billing_form_input select {
+        margin-bottom: 8px;
+    }
+    .billing_form_input select {
+        font-size: 14px;
+    }
+    .form_section .billing_form_input input[type="text"]::placeholder {
+    font-size: 13px;
+}
+    .checkout_heading h2, .form_section h2 {
+      font-size: 20px!important;
+    }
+        .checkout_area h2 {
+        padding: 10px 0;
+           font-size: 20px!important;
+    }
+    /************************************ CHECLOUT PAGE ENDS ************************************************/
+
+
+    /************************************ CART PAGE STARTS ************************************************/
+    .cart_shopping_heading{
+        font-size: 20px!important;
+    }
+     .order_card{
+        font-size: 20px!important;
+    }
+    /************************************ CART PAGE ENDS ************************************************/
+
+
+    /************************************ LOGIN PAGE ENDS ************************************************/
+       .register_area {
+    width: 100%;
+}
+.login_form .form_input label {
+    font-size: 16px;
+}
+.register_link {
+  font-size: 15px;
+  margin-top: 10px;
+}
+.register_link a span {
+ font-size: 16px;
+}
+.register_area {
+    padding: 15px;
+}
+    .login_form h2 {
+      font-size: 20px!important;
+    }
+    .login_form .form_input input {
+    font-size: 14px;
+}
+.toggle_password i{
+    font-size: 14px;
+}
+.register_btn_area {
+    margin-top: 4px;
+}
+    /************************************ LOGIN PAGE ENDS ************************************************/
     
 }
 
@@ -625,6 +852,9 @@ padding: 20px;
 .cart_icon .cart_count {
     font-size: 9px;
 }
+.user_avatar i {
+        font-size: 18px;
+    }
     /* header-section-ends */
 
     /* hero-section-starts */
@@ -662,4 +892,82 @@ padding: 0;
        padding-bottom: 8px;
     }
     /***************************************** SHOP PAGE ENDS ************************************************/
+
+
+    /***************************************** MYORDER PAGE ENDS ************************************************/
+    .myorder_wrapper {
+    padding: 10px;
+}
+.myorder_wrapper h2 {
+    margin-bottom: 11px;
+}
+.myorder_area table .table_btns {
+        gap: 7px;
+    }
+    /***************************************** MYORDER PAGE ENDS ************************************************/
+
+
+    /***************************************** CART PAGE STARTS ************************************************/
+        .cart_details p {
+        font-size: 14px;
+    }
+        .cart_content_container h2 {
+        margin: 10px 0;
+    }
+    .cart_item.row {
+    margin-bottom: 30px;
+}
+.cart {
+    gap: 30px;
+}
+    /***************************************** CART PAGE ENDS ************************************************/
+
+
+    /***************************************** CHECKOUT PAGE STARTS ************************************************/
+        .checkout_heading h2, .form_section h2 {
+        padding: 10px 0;
+    }
+    .billing_form_input input, .billing_form_input select {
+  padding: 4px;
+}
+ .billing_form_input select {
+        font-size: 13px;
+    }
+        .summary_item span {
+        font-size: 13px;
+    }
+        .summary_line .checkout_price {
+        font-size: 14px;
+    }
+        .summary_line {
+        margin: 12px 0;
+    }
+    
+    /***************************************** CHECKOUT PAGE ENDS ************************************************/
+
+
+    /***************************************** LOGIN PAGE ENDS ************************************************/
+        .login_form h2 {
+        margin-bottom: 10px;
+    }
+    .login_form .form_input label {
+    margin: 8px 0 4px;
+    font-size: 15px;
+}
+.login_form .form_input input {
+    padding: 8px;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+.toggle_password i{
+    font-size: 12px;
+}
+    .register_link {
+        font-size: 14px;
+        margin-top: 6px;
+    }
+        .register_link a span {
+        font-size: 15px;
+    }
+    /***************************************** LOGIN PAGE ENDS ************************************************/
 }
