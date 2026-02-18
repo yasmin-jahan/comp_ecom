@@ -109,7 +109,8 @@ function generateFilter(products){
 
             //color filter
             if(selectedColors.length > 0){
-                const hasColor = p.colors.some((c) =>selectedColors.includes(c));
+                // const hasColor = p.colors.some((c) =>selectedColors.includes(c));
+                const hasColor = p.colors && p.colors.some((c) => selectedColors.includes(c));
                 if (!hasColor) return false;
                 
             }
@@ -266,8 +267,19 @@ document.getElementById("resetFilterBtn").addEventListener("click", resetFilters
         currentPage = 1; 
         filterAndRenderProducts();
     });
+
+//     //update count
+// function updateCartCount(){
+//   const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+//   const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+//   const cartCount = document.getElementById("cartCount");
+//   if(totalItems){
+//     cartCount.textContent = totalItems;
+//   }
+// }
 generateFilter(products);
     filterAndRenderProducts();
+    // updateCartCount();
     
 
 //filter hide and show

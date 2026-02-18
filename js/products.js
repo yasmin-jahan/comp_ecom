@@ -2,11 +2,11 @@ const products = [
   // best-seller products
   {
     id: 1,
-    name: "Red Chief Genuine Leather Derby Lace Up |Formal Shoes for Men for Office | PU Sole | RC3506",
+    name: "Trendy Fashion Watch – Lightweight & Comfortable",
     slug: "red-chief-genuine-leather-derby-lace-up-formal-shoes-for-men-for-office-pu-sole-rc3506",
 
     description:
-      "Elevate your street cred by pairing these Baggy Oversized Jeans with a graphic t-shirt and high-top sneakers. Roll up the cuffs for an added edge and throw on a bomber jacket to complete the look",
+      "Experience timeless elegance with this premium watch, crafted to combine style and precision. Designed with a sleek dial, durable stainless-steel case, and comfortable strap, this watch enhances your everyday look while delivering reliable performance. Whether for formal occasions or daily wear, it reflects sophistication and confidence.",
     price: 29.99,
     listPrice: 0,
 
@@ -128,33 +128,33 @@ const products = [
     sizes: ["S", "M", "L", "XL"],
     reviews: [],
   },
-  // {
-  //   id: 6,
-  //   name: "Lymio Men's Loose shirts || Men's shirts Pants || Denim shirts || Baggy",
-  //   slug: "lymio-mens-loose-shirts-mens-shirts-pants-denim-shirts-baggyss",
+  {
+    id: 6,
+    name: "Executive Style Leather Strap Watch|| Men's Fashion's",
+    slug: "Executive Style Leather Strap Watch",
 
-  //   description:
-  //     "Elevate your street cred by pairing these Baggy Oversized shirts with a graphic t-shirt and high-top sneakers. Roll up the cuffs for an added edge and throw on a bomber jacket to complete the look",
-  //   price: 29.99,
-  //   listPrice: 0,
+    description:
+      "This stylish and reliable watch is built for everyday comfort and durability. With a clean design and accurate timekeeping, it’s perfect for work, college, or daily activities. A great choice for those who want quality and style at an affordable price.",
+    price: 69.99,
+    listPrice: 0,
 
-  //   images: [
-  //     "img/shirts/shirts_p1-1.jpg",
-  //     "img/shirts/shirts_p1-2.jpg",
-  //   ],
-  //   category: "Shirts",
-  //   brand: "Tom Ford",
-  //   tags: ["best-seller"],
-  //   isPublished: true,
-  //   avgRating: 4.5,
-  //   numReviews: 6,
+    images: [
+      "img/watches/watches_p3-1.jpg",
+      "img/watches/watches_p3-2.jpg",
+    ],
+    category: "Watches",
+    brand: "Breitling",
+    tags: ["best-seller"],
+    isPublished: true,
+    avgRating: 4.5,
+    numReviews: 6,
 
-  //   numSales: 9,
-  //   countInStock: 60,
-  //   colors: ["blue", "dark-blue"],
-  //   sizes: ["S", "M", "L", "XL"],
-  //   reviews: [],
-  // },
+    numSales: 9,
+    countInStock: 60,
+    colors: ["black", "dark-blue"],
+    sizes: ["S", "M", "L", "XL"],
+    reviews: [],
+  },
   {
     id: 7,
     name: "Lymio Men's Loose shirts || Men's t-shirts Pants || Baggy",
@@ -266,8 +266,8 @@ const products = [
     brand: "Levi’s",
     tags: ["new-arrival"],
     isPublished: true,
-    avgRating: 4.5,
-    numReviews: 6,
+    avgRating: 4.0,
+    numReviews: 5,
 
     numSales: 16,
     countInStock: 20,
@@ -481,7 +481,7 @@ const products = [
 
     description:
       "Elevate your street cred by pairing these Baggy Oversized Jeans with a graphic t-shirt and high-top sneakers. Roll up the cuffs for an added edge and throw on a bomber jacket to complete the look",
-    price: 329.99,
+    price: 339.99,
     listPrice: 0,
 
     images: [
@@ -503,12 +503,12 @@ const products = [
   },
   {
     id: 21,
-    name: "Urbano Fashion Men's Cotton Full Sleeve Regular Fit Casual Solid Shirt",
-    slug: "Urbano Fashion Men's Cotton Full Sleeve Regular Fit Casual Solid Shirt",
+    name: "Mens's Regular Watches",
+    slug: "Mens's Regular Watches",
 
     description:
-      "Elevate your street cred by pairing these Baggy Oversized Jeans with a graphic t-shirt and high-top sneakers. Roll up the cuffs for an added edge and throw on a bomber jacket to complete the look",
-    price: 329.99,
+      "Experience timeless elegance with this premium watch, crafted to combine style and precision. Designed with a sleek dial, durable stainless-steel case, and comfortable strap, this watch enhances your everyday look while delivering reliable performance. Whether for formal occasions or daily wear, it reflects sophistication and confidence.",
+    price: 129.99,
     listPrice: 0,
 
     images: [
@@ -570,8 +570,8 @@ const products = [
     brand: "Burberry",
     tags: ["featured"],
     isPublished: true,
-    avgRating: 4.5,
-    numReviews: 6,
+    avgRating: 3.5,
+    numReviews: 5,
 
     numSales: 9,
     countInStock: 60,
@@ -597,8 +597,8 @@ const products = [
     brand: "Burberry",
     tags: ["featured"],
     isPublished: true,
-    avgRating: 4.5,
-    numReviews: 6,
+    avgRating: 3.5,
+    numReviews: 5,
 
     numSales: 9,
     countInStock: 60,
@@ -629,6 +629,33 @@ const products = [
     numSales: 9,
     countInStock: 60,
     colors: ["blue", "dark-blue"],
+    sizes: ["S", "M", "L", "XL"],
+    reviews: [],
+  },
+  {
+    id: 26,
+    name: "Classic Luxury Watch with Minimal Dial || Men's Fashion's",
+    slug: "Classic Luxury Watch with Minimal Dial",
+
+    description:
+      "This stylish and reliable watch is built for everyday comfort and durability. With a clean design and accurate timekeeping, it’s perfect for work, college, or daily activities. A great choice for those who want quality and style at an affordable price.",
+    price: 49.99,
+    listPrice: 0,
+
+    images: [
+      "img/watches/watches_p4-1.jpg",
+      "img/watches/watches_p4-2.jpg",
+    ],
+    category: "Watches",
+    brand: "Omega",
+    tags: ["best-seller"],
+    isPublished: true,
+    avgRating: 4.5,
+    numReviews: 6,
+
+    numSales: 9,
+    countInStock: 60,
+    colors: ["black", "dark-blue"],
     sizes: ["S", "M", "L", "XL"],
     reviews: [],
   },
@@ -667,14 +694,27 @@ function renderProducts(filterCategory = "all"){
                                
            </div>
                <div class="order">
-              <button> <i class="fa-solid fa-cart-shopping"></i></button>
+              <button class="add-to-cart" data-id="${product.slug}"> <i class="fa-solid fa-cart-shopping"></i></button>
                    </div>
              </div>
                
 
     `;
+    // card.querySelector('.add-to-cart')
+    //   .addEventListener('click', () => {
+    //     addToCart(product);
+    //   });
+ 
+    
     row.appendChild(card);
     $('.product_content  h3').matchHeight();
+  });
+ document.querySelectorAll(".add-to-cart").forEach((btn)=>{
+    btn.addEventListener("click", () =>{
+      const productId = btn.getAttribute("data-id");
+      const productToAdd = products.find((p) => p.slug == productId);
+      addToCart(productToAdd);
+    });
   });
 }
 
@@ -694,6 +734,16 @@ buttons.forEach((button)=>{
     });
 });
 }
+//update count
+function updateCartCount(){
+  const cart = JSON.parse(localStorage.getItem("cart") || "[]");
+  const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+  const cartCount = document.getElementById("cartCount");
+  if(totalItems){
+    cartCount.textContent = totalItems;
+  }
+}
 generateCategoryBtns(products);
+updateCartCount();
 
 renderProducts("all");
