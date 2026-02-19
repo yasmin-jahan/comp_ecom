@@ -8,14 +8,14 @@ function renderProductDetails(product) {
     container.innerHTML = `
      <div class="product_details_card">
      <div class="row">
-     <div class="col-lg-6">
+     <div class="col-md-6">
         <div class="product_details_img">
             <img src="" alt="Main Product Image" id="main_image">
           
         </div>
           <div class="thumbnails" id="thumbnailContainer"></div>
         </div>
-         <div class="col-lg-6">
+         <div class="col-md-6">
         <div class="info_column">
             <h2>${product.name}</h2>
             <span class="price">$${product.price.toFixed(2)}</span>
