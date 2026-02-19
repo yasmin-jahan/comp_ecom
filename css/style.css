@@ -225,8 +225,9 @@ h3 {
     position: absolute;
     background-color: var(--bg-primary);
     top: 50px;
-    left: 0;
+    right: 0;
     width: 250px;
+    max-width: 80vw;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     z-index: 99;
     display: flex;
@@ -1199,7 +1200,7 @@ input:-webkit-autofill:active {
 .thumbnails {
     display: flex;
     max-width: 250px;
-    height: 125px;
+    height: 135px;
     justify-content: center;
     margin: 0 auto;
     gap: 20px;

@@ -45,6 +45,11 @@
 }
 
 @media only screen and (max-width:1199px){
+    /* header-section-starts */
+    .user_dropdown {
+    width: 220px;
+}
+    /* header-section-ends */
 
     /* product-section-starts */
     .product_section {
@@ -140,6 +145,9 @@
     .hamburger{
         display: flex;
     }
+    .user_dropdown {
+   top: 43px;
+}
     /* header-section-ends */
 
     /* hero-section-starts */
@@ -254,6 +262,31 @@
       margin-left: auto;
     }
     /*************************************** MYORDER PAGE ENDS *************************************************/
+
+
+    /*************************************** PRODUCT DETAILS PAGE STARTS ***************************************/
+    .product_details_img {
+    max-width: 300px;
+    height: 350px;
+}
+.thumbnails {
+    max-width: 230px;
+    height: 110px;
+    gap: 15px;
+}
+.info_column .price {
+    font-size: 20px;
+}
+.info_column .description {
+    font-size: 15px;
+}
+.info_column .common_info {
+    font-size: 16px;
+}
+.info_column strong {
+    font-size: 18px;
+}
+    /*************************************** PRODUCT DETAILS PAGE ENDS ****************************************/
 }
 
 @media only screen and (max-width:767px){
@@ -423,6 +456,19 @@ font-size: 16px;
     margin-bottom: 20px;
 }
     /********************************* LOGIN PAGE ENDS **********************************************/
+
+
+    /********************************* PRODUCT DETAILS PAGE STARTS **********************************************/
+    .product_details_card {
+    padding: 40px 20px;
+}
+.product_details_card .row{
+    row-gap: 30px;
+}
+.info_column {
+    padding: 0;
+}
+    /********************************* PRODUCT DETAILS PAGE ENDS **********************************************/
     
 }
 
@@ -460,6 +506,10 @@ font-size: 16px;
 }
     .user_avatar i {
         font-size: 22px;
+    }
+        .user_dropdown {
+        width: 200px;
+        top: 33px;
     }
     /* header-section-ends */
 
@@ -668,6 +718,21 @@ font-size: 16px;
     .user_avatar i {
         font-size: 20px;
     }
+    .authBtn, .logout_btn {
+    padding: 6px 0;
+    font-size: 14px;
+}
+.dropdown_menu li {
+    padding: 6px 0;
+}
+.dropdown_menu li a {
+    font-size: 14px;
+}
+    .user_dropdown {
+        width: 170px;
+                top: 28px;
+    }
+
     /* header-section-ends */
 
     /* hero-section-starts */
@@ -837,6 +902,44 @@ padding: 12px;
     margin-top: 4px;
 }
     /************************************ LOGIN PAGE ENDS ************************************************/
+
+
+    /************************************ PRODUCT DETAILS PAGE STARTS ***************************************/
+        .product_details_img {
+        max-width: 250px;
+        height: 300px;
+        padding-bottom: 20px;
+    }
+    .thumbnails img.active {
+    border: 2px solid var(--primary);
+}
+    .thumbnails {
+        max-width: 200px;
+        height: 95px;
+    }
+    .info_column h2 {
+  font-size: 20px!important;
+}
+    .info_column .price {
+        font-size: 18px;
+    }
+        .info_column .description {
+        font-size: 14px;
+    }
+        .info_column strong {
+        font-size: 16px;
+    }
+        .info_column .common_info {
+        font-size: 14px;
+        margin-bottom: 7px;
+    }
+        .product_details_card {
+        padding: 30px 14px;
+    }
+    .related_products_area h2 {
+     font-size: 20px!important;
+}
+    /************************************ PRODUCT DETAILS PAGE ENDS ***************************************/
     
 }
 
@@ -970,4 +1073,30 @@ padding: 0;
         font-size: 15px;
     }
     /***************************************** LOGIN PAGE ENDS ************************************************/
+
+
+    /***************************************** PRODUCT DETAILS PAGE STARTS **********************************/
+        .product_details_img {
+        max-width: 200px;
+        height: 235px;
+    }
+        .thumbnails {
+        max-width: 160px;
+        height: 75px;
+    }
+        .info_column .price {
+ margin-bottom: 10px;
+    }
+        .info_column .description {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+    .info_column strong {
+        font-size: 15px;
+    }
+        .info_column .common_info {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+    /***************************************** PRODUCT DETAILS PAGE ENDS ***********************************/
 }
